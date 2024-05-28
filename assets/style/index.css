@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.app-sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-sidebar h2 {
+  margin: 0;
+  color: #007BFF;
+}
+
+.app-sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app-sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.app-sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.app-sidebar nav ul li.active a {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.btn-add-note {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.notes-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+
+}
+
+.input-note-container {
+  margin-bottom: 10px;
+}
+
+
+.input-note-container,
+.note-display {
+  display: block;
+  flex-direction: column;
+  background-color: #f6e4e4;
+  padding: 20px;
+  width: 500px;
+  /* color: #333; */
+  border-radius: 5px;
+}
+
+.input-note-content {
+  resize: none;
+}
+
+.input-note-title,
+.input-note-content {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-save-note,
+.btn-cancel-note {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.btn-save-note {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-cancel-note {
+  background-color: #ccc;
+  color: #333;
+}
+
+.btn-delete-note {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.note-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.note-list-container div {
+  background-color: #0f69df33;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.note-title {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.note-date {
+  color: #666;
+  margin: 0;
+}
+
+.note-title-info,
+.note-content-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

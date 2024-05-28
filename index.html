@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="/assets/styles/reset.css">
+    <script src="/assets/scripts/app.js" type="module"></script>
+</head>
+<body>
+  <div class="app-container">
+      <aside class="app-sidebar">
+          <h2>DailyFlow</h2>
+          <nav>
+              <ul>
+                  <li><a href="#">Routine</a></li>
+                  <li><a href="#">Tasks</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li class="active"><a href="#">Notes</a></li>
+                  <li><a href="#">Reports</a></li>
+              </ul>
+          </nav>
+      </aside>
+      <main class="app-main">
+          <header class="app-header">
+              <h1>Notes</h1>
+              <button class="btn-add-note">+ Take a note</button>
+          </header>
+          <section class="notes-container">
+              <div class="input-note-container">
+                  <input type="text" class="input-note-title" placeholder="Title">
+                  <textarea class="input-note-content" placeholder="Content"></textarea>
+                  <button class="btn-save-note">Save</button>
+                  <button class="btn-cancel-note">Cancel</button>
+              </div>
+              <div class="note-list-container"></div>
+              <div class="note-display">
+                  <p class="note-date-info"></p>
+                  <h2 class="note-title-info"></h2>
+                  <p class="note-content-info"></p>
+                  <button class="btn-delete-note">Delete</button>
+              </div>
+          </section>
+      </main>
+  </div>
+</body>
+</html>
